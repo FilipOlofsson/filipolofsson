@@ -13,8 +13,18 @@ $(document).ready(function(){
     }, 1000);
   });
 });
+
 $(document).ready(function(){
   $(".contact-button").click(function(e) {
+    e.preventDefault();
+    $('html, body').animate({
+      scrollTop: $($.attr(this, 'href')).offset().top
+    }, 1000);
+  });
+});
+
+$(document).ready(function(){
+  $("#home-button").click(function(e) {
     e.preventDefault();
     $('html, body').animate({
       scrollTop: $($.attr(this, 'href')).offset().top
@@ -25,27 +35,41 @@ $(document).ready(function(){
 </head>
 
 <body>
-  <div class="main-container">
+<div id="wrapper">
+  <div class="main-container" id="home">
     <div class="background-overlay">
       <div class="navbar">
-        <a href="#contact" class="navbar-link contact-button">CONTACT</a>
+        <a href="#section2" class="navbar-link contact-button">CONTACT</a>
         <a href="resume.html" class="navbar-link">RESUME</a>
-        <a href="#about" id="about-button" class="navbar-link">ABOUT</a>
+        <a href="#section1" id="about-button" class="navbar-link">ABOUT</a>
         <a href="portfolio.html" class="navbar-link">PORTFOLIO</a>
-        <a href="index.html" class="navbar-link">HOME</a>
+        <a href="#home" id="home-button" class="navbar-link">HOME</a>
       </div>
       <div class="button-container">
         <h1 class="front-text">FILIP OLOFSSON</h1>
         <a class="main-page-button">RESUME</a>
-        <a class="main-page-button contact-button" href="#contact">CONTACT</a>
+        <a class="main-page-button contact-button" href="#section2">CONTACT</a>
       </div>
     </div>
-    <div class="about-container" id="about">
-      a
-    </div>
-    <div class="contact-container" id="contact">
-      a
-    </div>
+    <section class="about-container info-container" id="section1">
+      <h1 class="title-text">ABOUT</h1>
+      <p class="info-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
+    <section class="contact-container" id="section2">
+    <div class="left contact-info-container">
+      <p class="contact-title">CONTACT</p>
+        <p class="contact-text">filip.olofsson.99@hotmail.com</p>
+      </div>
+      <div class="right contact-info-container">
+        <span class="contact-title">SOCIAL MEDIAS</span>
+      </div>
+    </section>
   </div>
+</div>
 </body>
 </html>
