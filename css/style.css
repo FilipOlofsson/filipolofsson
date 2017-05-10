@@ -1,7 +1,7 @@
 body {
 	margin:0;
-	font-family: 'Pontano Sans', sans-serif;
-
+		font-family: 'Pontano Sans', sans-serif;
+		overflow: hidden;
 }
 a {
 	text-decoration: none;
@@ -53,6 +53,7 @@ h2 {
 	background-position: bottom;
 	background-repeat:no-repeat;
 	background-size:cover;
+	overflow:hidden;
 }
 .navbar-link {
 	font-size:1.5em;

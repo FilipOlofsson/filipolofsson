@@ -29,13 +29,13 @@ $(document).keydown(function (e) {
 });
 $(window).bind('mousewheel', function(event) {
     if (event.originalEvent.wheelDelta >= 0) {
-        $('html, body').animate({ scrollTop: 0}, 1000);
+      $('html, body').stop();
+      $('html, body').animate({ scrollTop: 0}, 1000);
+      
     }
     else {
-        $('html, body').animate({ scrollTop: $(window).height()}, 1000);
+      $('html, body').stop();
+      $('html, body').animate({ scrollTop: $(window).height()}, 1000);
+      
     }
-});
-$('html, body').css({
-    overflow: 'hidden',
-    height: '100%'
 });
