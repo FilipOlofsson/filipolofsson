@@ -29,13 +29,16 @@ $(document).keydown(function (e) {
 });
 $(window).bind('mousewheel', function(event) {
     if (event.originalEvent.wheelDelta >= 0) {
-      $('html, body').stop();
-      $('html, body').animate({ scrollTop: 0}, 1000);
+      if($(window).scrollTop() + $(window).height() == $(document).height()) {
+        $('html, body').stop();
+        $('html, body').animate({ scrollTop: 0}, 1000);
+      }
       
     }
     else {
-      $('html, body').stop();
-      $('html, body').animate({ scrollTop: $(window).height()}, 1000);
-      
+      if($(window).scrollTop() == 0) {
+        $('html, body').stop();
+        $('html, body').animate({ scrollTop: $(window).height()}, 1000);
+      }
     }
 });
