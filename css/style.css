@@ -5,11 +5,12 @@ body {
 }
 a {
 	text-decoration: none;
-	color:black;
+	color:white;
 }
 p {
 	margin:0;
 	display:inline;
+	color:white;
 }
 h2 {
 	margin:0;
@@ -24,27 +25,30 @@ h2 {
 	background-image: url("../img/arrow.png");
 	background-position: center;
 	background-size: cover;
-	transition-duration: 0.3s;
 	border-radius: 50%;
 	padding:30px;
-	border:solid 2px rgba(68, 161, 160, 0.3);
 	cursor: pointer;
+	transition-duration: 0.3s;
+	border-width:1px;
+	border-style:solid;
+	border-color: transparent;
 }
 .down-arrow:hover {
 	width:10px;
 	height:10px;
 	top:calc(90vh - 205px);
-	border:solid 2px rgba(68, 161, 160, 1);
+	border-color: white;
 }
 .name-text {
 	text-align: center;
 	font-size:4em;
 	letter-spacing: 10px;
+	color:white;
 	height:10vh;
-	width:30vw;
+	width:100%;
 	margin:auto;
 	position: relative;
-	top:calc(40vh - 100px);
+	top:calc(40vh - 50px);
 }
 .first-page-container {
 	width:100%;
@@ -168,6 +172,7 @@ h2 {
 	background-color: rgba(0, 0, 0, 0.4);
 	width:calc(100% + 8px);
 	position:relative;
+	color:white;
 	left:-4px;
 	top:-4px;
 }
@@ -186,10 +191,11 @@ h2 {
 	font-weight:900;
 }
 .a-hover {
-	width:200px;
+	width:300px;
 }
 .a-hover:hover {
 	font-size:2.15em;
+	padding-top:calc(1em - 0.2em);
 }
 .active {
 	border-style:solid;
@@ -199,7 +205,7 @@ h2 {
 }
 .about-text {
 	font-size: 1.5em;
-	padding-top: 10px;
+	padding-top: 1em;
 }
 .underscore {
 	text-decoration: underline;
