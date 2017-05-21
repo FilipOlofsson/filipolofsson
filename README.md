@@ -6,3 +6,4 @@
 ### http://strml.net
 ## Validation
 ### https://validator.w3.org/nu/?doc=https%3A%2F%2Ffilipolofsson.github.io%2Ffilipolofsson%2F
+### https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ffilipolofsson.github.io%2Ffilipolofsson%2F&profile=css3&usermedium=all&warning=1&vextwarning=&lang=sv
